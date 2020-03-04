@@ -10,3 +10,9 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+# Assets will be build on server, so dont track them
+public/js
+public/style
+public/img
+public/mix-manifest.json
