@@ -175,6 +175,11 @@ return [
         App\Common\Providers\EventServiceProvider::class,
         App\Common\Providers\RouteServiceProvider::class,
 
+        /*
+         * Application presentation layer services
+         */
+        Presentation\WebUI\Common\WebUIServiceProvider::class,
+
     ],
 
     /*
