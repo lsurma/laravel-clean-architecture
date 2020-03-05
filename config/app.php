@@ -167,7 +167,17 @@ return [
          */
 
         /*
-         * Application Service Providers...
+         * Application infrastructure layer providers
+         */
+        \Infrastructure\Persistence\Eloquent\EloquentPersitenceServiceProvider::class,
+
+        /*
+         * Application presentation layer providers
+         */
+        Presentation\WebUI\WebUIServiceProvider::class,
+
+        /*
+         * Application service providers...
          */
         App\Common\Providers\AppServiceProvider::class,
         App\Common\Providers\AuthServiceProvider::class,
@@ -175,15 +185,6 @@ return [
         App\Common\Providers\EventServiceProvider::class,
         App\Common\Providers\RouteServiceProvider::class,
 
-        /*
-         * Application presentation layer services
-         */
-        Presentation\WebUI\Common\WebUIServiceProvider::class,
-
-        /*
-         * Application presentation layer providers
-         */
-        Presentation\WebUI\WebUIServiceProvider::class,
 
     ],
 
