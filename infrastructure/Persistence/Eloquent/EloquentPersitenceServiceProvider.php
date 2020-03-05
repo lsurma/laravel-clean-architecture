@@ -16,5 +16,9 @@ class EloquentPersitenceServiceProvider extends \Illuminate\Support\ServiceProvi
 
     public function boot()
     {
+        // Load migrations
+        $this->loadMigrationsFrom([
+            __DIR__ . '/Migrations'
+        ]);
     }
 }
