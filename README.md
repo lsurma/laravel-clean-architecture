@@ -33,6 +33,11 @@ project
 
 ```
 
+### Trade-offs 
+Laravel and its packages/ecosystem is tightly based on Eloquent ORM. To prepare "real" clean architecture, with other design principles like repository pattern, we should not depend on Eloquent models in any layer except architecutre layer (Eloquent persistence repositories). That would lead to reinventing many parts of our application, and frameworks "goodies", so i personally don't feel it's good approach. 
+Before starting new project, we should pick framework and tools adequate to needs, project size etc. If we need full decoupling layers/dependecies/parts of our application, then maybe we should pick other framework, or other ORM.
+Nonetheless in my opinion, presented here structure will be big step forward to more maintainable Laravel project structure.
+
 ### Links
 - https://lorisleiva.com/conciliating-laravel-and-ddd/
 - https://mattdoescode.com/articles/scaling-laravel-architecture-2018-11-09
