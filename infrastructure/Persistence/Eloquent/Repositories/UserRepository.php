@@ -9,10 +9,6 @@ class UserRepository implements UserRepositoryInterface
 {
     public function find($id): ?\Domain\Models\User
     {
-        return new User([
-            'id' => rand(1, 100),
-            'name' => 'name',
-            'email' => 'abc@abc.pl'
-        ]);
+        return User::find($id);
     }
 }
