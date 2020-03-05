@@ -180,6 +180,11 @@ return [
          */
         Presentation\WebUI\Common\WebUIServiceProvider::class,
 
+        /*
+         * Application presentation layer providers
+         */
+        Presentation\WebUI\WebUIServiceProvider::class,
+
     ],
 
     /*
