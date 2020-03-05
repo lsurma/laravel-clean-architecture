@@ -72,7 +72,8 @@
                     Laravel WebUI (clean architecture)
                 </div>
 
-                <span>{{ __('webui::messages.test') }}</span>
+                <div>{{ __('webui::messages.test') }}</div>
+                <div>User: {{ $user }}</div>
             </div>
         </div>
     </body>
